@@ -7,15 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="calculator.php" method="get">
-        <input type="submit">
-    </form> 
-    <br><br>
-
     <?php 
-        echo "Roses are {color} <br>";
-        echo "{plural noun} are blue <br>";
-        echo "I love {celebrity} <br>";
+        function sayHi($name, $age) {
+            echo "Hello $name! You are $age years old. <br>";
+        }
+
+        sayHi("Kevin", 15);
+        sayHi("Dev", 20);
+        sayHi("Tool",25);
     ?>
 </body>
 </html>

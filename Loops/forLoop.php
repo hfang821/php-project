@@ -7,13 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="calculator.php" method="get">
-        <input type="number" name="num1">
-        <br>
-        <input type="number" name="num2">
-        <input type="submit">
-    </form> 
+    
+    <?php
+        $luckyNumbers = array(4, 8, 14, 16, 23, 42);
+        for($i=0; $i<count($luckyNumbers); $i++) {
+            echo "$luckyNumbers[$i] <br>";
+        }
+    ?>
 
-    answer: <?php echo $_GET["num1"] + $_GET["num2"] ?>
 </body>
 </html>
